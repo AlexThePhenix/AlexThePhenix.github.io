@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body style="background-color:Black;">
+<h1 style="color:MediumOrchid;">Hello Peoples</h1>
+<a href ="/about.html">About Me</a>
+
+<H3 style="color:purple;"></p> click the link above</H3>
+
+<H3 style="color:purple;"></p>CLICK THE BUTTON!!!! DO IT!!!!</H3>
+
+<H4 style="color:purple;font-size:72px;display:none;" id="demo">YEESSSSS, YOU CLICKED IT, HAVE FUN. NOW CLICK IT AGAIN, or click the second button</H4>
+
+<button id="button"> DON'T Click Me!</button>
+
+<p id="demo2">DONT PRESS THE BUTTON.</p>
+
+<script>
+    const button = document.getElementById("button")
+    button.onclick = function() {
+        const  demo = document.getElementById("demo")
+        if(demo.style.display === "none")
+            demo.style.display = "block"
+        else
+            demo.style.display = "none"
+    }
+</script>
+<p id="button2">DONT PRESS THE BUTTON</p>
+<script>
+     const button = document.getElementById("button")
+     button.onclick = function() {
+        const  demo = document.getElementById("demo")
+        if(innerHTML='YOU CLICKED IT, nothing happened but funny')
+            demo.style.display = "block"
+        else
+            demo.style.display = "none"
+    }
+</script>
+<button type="button" onclick="document.getElementById('demo').innerHTML='YOU CLICKED IT, nothing happened but funny'">DON'T Click Me!</button>
+</body>
