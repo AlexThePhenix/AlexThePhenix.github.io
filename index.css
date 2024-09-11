@@ -41,3 +41,6 @@
     background-color: blueviolet;
     width: 10%;
 }
+.nav a:hover{
+    background-color: chocolate;
+}
