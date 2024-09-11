@@ -11,4 +11,6 @@
 .header {
     background-color: lightblue;
     color: black;
+
+    justify-content: center;
 }
