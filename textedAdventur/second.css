@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin : 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: lightblue;
+    color: black;
+
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    font-size: 48px;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.w-full{
+    width: 100%;
+}
+.h-full{
+    height: 100%;
+}
+.w-dvw{
+    min-width: 100dvw;
+}
+.h-dvh{
+   min-height: 100dvh;
+}
+.nav{
+    background-color: blueviolet;
+    width: 10%;
+}
+.nav a:hover{
+    background-color: chocolate;
+}
