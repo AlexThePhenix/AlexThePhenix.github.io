@@ -14,7 +14,7 @@
 }
 
 .header {
-    background-color: lightblue;
+    background-color: #c41cc4;
     color: black;
 
     justify-content: center;
@@ -42,5 +42,5 @@
     width: 10%;
 }
 .nav a:hover{
-    background-color: chocolate;
+    background-color: lavender;
 }
