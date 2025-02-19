@@ -14,8 +14,8 @@
 }
 
 .header {
-    background-color: #c41cc4;
-    color: black;
+    background-color: (0, 61, 58);
+    color: lightblue;
 
     justify-content: center;
     align-items: center;
