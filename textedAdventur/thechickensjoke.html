@@ -1,4 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="hoome.css">
+        <title>the new dark web</title>
+    </head>
+</html>
+<body style="background-color:rgb(101, 81, 137);">
+    
+
+
+    <div class="flex-col h-dvh">
+        <div class="flex-row header">
+            <span>Alex's Games</span>
+        </div>
+    <div class="flex-row flex-grow">
+        <div class="flex-col nav">
+
+            <a href="./home.html">Home                       </a>
+
+            <a href="./thechickensjoke.html">text adventure  </a>
+
+        </div>
+        <div class="flex-col">
+            <h3 style="color:rgb(134, 133, 227);">welcome to my page, youll find my text adventer, still in progress, and my home page, also still in progress.</h3>
+        </div>
+    </div>
+</div>
+
+</body>
 <script>
+
     let PlayerName = prompt("welcome, what is your name new comer?")
     
     if (PlayerName.toLowerCase().includes("mcgee")){
@@ -23,20 +54,21 @@
     
     else alert("WRONG ANSWER, but ill let you stay, just play the stupid game, you already upset me")
     
-    choice = prompt(`you wake up in the middle of a dark dead forest, burnt to ashes. you quickly scan the area and spot a car and something else in the distance, you got two options, one, you could look around, two you can try and figure out what happened, what do you do ${PlayerName},`)
+    choice = prompt(`you wake up in the middle of a dark dead forest, burnt to ashes. you quickly scan the area and spot a car and something else in the distance, you got two options, one, you could look around, two you can try and figure out what happened, what do you do ${PlayerName}.`)
     
-    if (choice.toLowerCase().includes("look around")){
+    if (choice.toLowerCase().includes("look","around")){
         alert(`you decide to look around at your suroundings and find a backpack, in it you find a wallet with money, cards and a drivers license. you look around some more and you remember the car, you look closer and its crushed, looks like a high speed crash into a tree, everything looks smashed, the front two doors are jammed by metal and the rear are assumably locked. so ${PlayerName}... what are you going to do, you have two choices, you can either break the windows of the car, or you can just walk away and look around`)
     }
+
     else alert(`you try the door handle, which doesnt work, the car door is jammed shut, you decide to break the car window, but your punches seem to do nothing, your body is weak from what ever happend, its hard for you to even stand at this point, you start to loose hope that you wont get in, but then you check the roof for a sunroof/moonroof(whatever you call it ${PlayerName}), and luck may be on your side today because the sunroof is open, you climb inside and find two people, theyre passed out, you have two options, one you could see if theres food in the car or water, or two you can check on the people`)
     
     choice = prompt(`what do you decide to do ${PlayerName}`)
     
     if (choise.toLowerCase().includes("people")){
         alert(`you check the two bodys in the car... theyre breathing, faintly and struggling, but breathing, you wonder how the windows arent broken after the crash but you move on. you search their bodys for anytrhing that might help identify them. you find a wallet in one of the pockets. his name is Fredriss bartholimule. wierd but ok, hes 23 and is a donor, so if he dies, his organs can be harvested and used. `)
-    
     }
-    else(`you try looking for food inside the car`)
+    
+    else choice = prompt(`you try looking for food inside the car, inside the car you find two people half dead with blood covering them. `)
     
     choice = prompt(`What will you do ${PlayerName} you can either, one get out of the car and look around (Leave) or, two try your best to help the two people.(Help)`)
     
