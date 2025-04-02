@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 *{
     inset:  0;
     margin: 0;
@@ -10,7 +17,7 @@
 
     --theme-primary-content:#3B429F;
     --theme-secondary-content:#EDBBB4;
-    --theme-accent-content:#77966D;
+    --theme-accent-content:#b61dc4;
     --theme-surface-content:#FFE8D1;
 
     color:var(--theme-surface-content)
@@ -81,4 +88,11 @@ body{
 }
 .text-surface{
     color: var(--theme-surface-content);
+}
+
+.w-dvw{
+    width:100dvw;
+}
+.h-dvh{
+    height: 100dvh;
 }
