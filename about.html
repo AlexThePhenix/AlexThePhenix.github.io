@@ -8,20 +8,21 @@
         <div class="flex-col justify-center align-center w-dvw h-dvh">
         <img src="./pics/stitch.jpg" class="pfp">
         <h1 class="text-primary">Sebastian Nichols</h1>
-            <div class= "nav">
-             <a href="https://www.instagram.com/s10__maniac__/">Insta</a>
-             <a href="https://github.com/AlexThePhenix">Github</a>
-             <a href="./about.html">About</a>
-             <a href="./contact.html">Contact</a>
-             <a href="./projects.html">Projects</a>
+
+        <div class="projects">
+            <a class="project" href="./index.html">
+                <span class="project-title">Home</span>
+                <span class="project-description">Wanna Go Back To The Main Page?</span>
+            </a>
         </div>
         </div>
         <script>
             const pfps = [
-                "./pics/stitch.jpg",
+                "./pics/stitch.JPG",
                 "./pics/killer.jpg",
                 "./pics/deathmetal.JPG",
-                "./pics/adorbs.jpg"
+                "./pics/adorbs.JPG",
+                "./pics/frog.JPG"
             ]
             const pfp = document.querySelector(".pfp");
             pfp.src = pfps[Math.floor(Math.random() * pfps.length)]
@@ -47,6 +48,39 @@
                  font-family: "Dancing Script";
                  background: var(--theme-accent);
             }
+
+            .projects {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .project {
+                display:flex;
+                flex-direction: column;
+                max-width: 300px;
+                text-decoration: none;
+
+                color: var(--theme-primary-content); 
+                background: var(--theme-primary); 
+                border-radius: 1em;
+                padding: 1em;
+            }
+            .project:hover, .project:hover * {
+                background: var(--theme-secondary);
+                color: var(--theme-secondary-content);
+            }
+            .project-title{
+                font-size: 1.5em;
+                font-weight:bold;
+                text-align: center; 
+            }
+            .project-description{
+                font-size: 1m;
+                font-style: italic;
+                text-align: center;
+            }
+            
         </style>
     </body>
 </html>
