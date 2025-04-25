@@ -1,1 +1,52 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <title>Sebastian</title>
+    </head>
+    <body>
+        <div class="flex-col justify-center align-center w-dvw h-dvh">
+        <img src="./pics/stitch.jpg" class="pfp">
+        <h1 class="text-primary">Sebastian Nichols</h1>
+            <div class= "nav">
+             <a href="https://www.instagram.com/s10__maniac__/">Insta</a>
+             <a href="https://github.com/AlexThePhenix">Github</a>
+             <a href="./about.html">About</a>
+             <a href="./contact.html">Contact</a>
+             <a href="./projects.html">Projects</a>
+        </div>
+        </div>
+        <script>
+            const pfps = [
+                "./pics/stitch.jpg",
+                "./pics/killer.jpg",
+                "./pics/deathmetal.JPG",
+                "./pics/adorbs.jpg"
+            ]
+            const pfp = document.querySelector(".pfp");
+            pfp.src = pfps[Math.floor(Math.random() * pfps.length)]
+        </script>
+        <style>
+            h1{
+                font-family: 'Notable';
+            }
+            .nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav a {
+                color: var(--theme-accent);
+                text-decoration :none;
+                font-size:1.5em;
+                font-family: 'Lobster';
+                padding:2px;
+                border-radius: 1em;
+            }
+            .nav a:hover {
+                 color:var(--theme-accent-content);
+                 font-family: "Dancing Script";
+                 background: var(--theme-accent);
+            }
+        </style>
+    </body>
+</html>
