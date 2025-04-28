@@ -96,3 +96,7 @@ body{
 .h-dvh{
     height: 100dvh;
 }
+
+h1{
+    font-family: 'Notable';
+}

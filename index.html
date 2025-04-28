@@ -16,7 +16,7 @@
              <a href="./projects.html">Projects</a>
              <a href="./movies.html">Favorite Movies</a>
         </div>
-        </div>
+
         <script>
             const pfps = [
                 "./pics/stitch.jpg",
@@ -24,14 +24,16 @@
                 "./pics/deathmetal.JPG",
                 "./pics/adorbs.jpg",
                 "./pics/frog.jpg"
+                "./pics/me.png",
+                "./pics/killer.jpg",
+                "./pics/deathmetal.JPG",
+                "./pics/adorbs.jpg"
+
             ]
             const pfp = document.querySelector(".pfp");
             pfp.src = pfps[Math.floor(Math.random() * pfps.length)]
         </script>
         <style>
-            h1{
-                font-family: 'Notable';
-            }
             .nav {
                 display: flex;
                 flex-direction: column;

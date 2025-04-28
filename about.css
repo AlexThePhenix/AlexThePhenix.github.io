@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+*{
+    inset:  0;
+    margin: 0;
+    padding:0;
+
+    --theme-secondary:#587792;
+    --theme-primary:#DE639A;
+    --theme-accent:#77966D;
+    --theme-surface:#16001E;
+
+    --theme-primary-content:#3B429F;
+    --theme-secondary-content:#EDBBB4;
+    --theme-accent-content:#b61dc4;
+    --theme-surface-content:#FFE8D1;
+
+    color:var(--theme-surface-content)
+}
+
+body{
+    background:var(--theme-surface)
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.pfp{
+    height: 200px;
+    border-radius: 100%;
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(132, 0, 255);
+}
+
+.bg-primary{
+    background: var(--theme-primary)
+}
+.bg-secondary{
+    background: var(--theme-secondary);
+}
+.bg-accent{
+    background: var(--theme-accent);
+}
+.bg-surface{
+    background: var(--theme-surface);
+}
+.text-primary-content{
+    color: var(--theme-primary-content);
+}
+.text-secondary-content{
+    color: var(--theme-secondary-content);
+}
+.text-accent-content{
+    color: var(--theme-accent-content);
+}
+.text-surface-content{
+    color: var(--theme-surface-content);
+}
+.text-primary{
+    color: var(--theme-primary-content);
+}
+.text-secondary{
+    color: var(--theme-secondary-content);
+}
+.text-accent{
+    color: var(--theme-accent-content);
+}
+.text-surface{
+    color: var(--theme-surface-content);
+}
+
+.w-dvw{
+    width:100dvw;
+}
+.h-dvh{
+    height: 100dvh;
+}
