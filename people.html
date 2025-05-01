@@ -1,7 +1,85 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
+    </head>
     <marquee behavior="alternate" scrollamount="15">
-        <img src = "./money.png">
+      
     </marquee>
+<script>
+    const W = 800
+const H = 800
 
+let bounce = 0
+
+class Ball {
+  constructor() {
+    this.r  = randomBetween(8, 64)
+    this.x  = randomBetween(this.r, W - this.r)
+    this.y  = randomBetween(this.r, H - this.r)
+    
+    let angle = randomBetween(0, 360)
+    let speed = randomBetween(2,  0.5)    
+
+    this.vx = speed * Math.cos(angle * Math.PI / 180)
+    this.vy = speed * Math.sin(angle * Math.PI / 180)
+    
+    this.color = `rgb(${randomBetween(0, 0)}, ${randomBetween(150, 2505)}, ${randomBetween(128, 255)})`
+  }
+}
+
+const balls = [ ]
+
+
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  
+  for(let i = 0; i < 1000; i ++)
+    balls.push(new Ball())
+}
+
+function draw() {
+   background("#16001E");
+
+  for(let ball of balls) {
+    moveBall(ball)
+    drawBall(ball)
+  }
+  
+  
+  print(bounce)
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function drawBall(ball) {
+  fill(ball.color)
+  const d = 2 * ball.r
+  arc(ball.x, ball.y, d, d, 0, 2 * Math.PI)
+}
+
+function moveBall(ball) {
+  ball.x += ball.vx
+  ball.y += ball.vy
+  if(ball.x < ball.r || ball.x > W - ball.r){
+    ball.vx *= -1
+    bounce += 1
+  }
+  
+  
+  if(ball.y < ball.r || ball.y > H - ball.r){
+    ball.vy *= -1
+    bounce += 1
+  }
+  
+}
+
+function randomBetween(a, b) {
+  return Math.floor(Math.random() * (b - a + 1)) + a
+}
+</script>
 </html>
