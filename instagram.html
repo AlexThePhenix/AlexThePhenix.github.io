@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <title>socials</title>
+</head>
+<body>
+    <div class="flex-col justify-center align-center w-dvw h-dvh">
+        <img src="./pics/stitch.jpg" class="pfp">
+    <div class= "nav">
+    <a href="https://www.instagram.com/s10__maniac__/">Truck/Automative Instagram</a>
+    <a href="https://www.instagram.com/_alexs__photos_/">Photos/Drawing Instagram</a>
+    <a href="mailto:alexthephotomain@outlook.com" > alexthephotomain@outlook.com</a>
+    </div>
+
+    <div class="projects">
+        <a class="project" href="./index.html">
+            <span class="project-title">Home</span>
+            <span class="project-description">Wanna Go To The Main Page?</span>
+        </a>
+
+    </div>
+    <script>
+        const pfps = [
+            "./pics/stitch.jpg",
+            "./pics/killer.jpg",
+            "./pics/deathmetal.JPG",
+            "./pics/adorbs.JPG",
+            "./pics/frog.JPG",
+        ]
+        const pfp = document.querySelector(".pfp");
+        pfp.src = pfps[Math.floor(Math.random() * pfps.length)]
+    </script>
+</body>
+</html>
