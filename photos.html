@@ -1,4 +1,34 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <title>photos</title>
+    </head>
+    <body>
+        <div class="flex-col justify-center align-center w-dvw h-dvh">
+        <img src="./pics/stitch.jpg" class="pfp">
+        <h1 class="text-primary">Sebastian Nichols</h1>
+         <p>I'm a Highschool student in 11th grade. I have a lot of hobbys, programming is one of them. Along with some other things, drawing, biking, Photography, and video games. Bellow youll find how to contact me. enjoy the website, report any bugs you find to me please and thank you.</p>         
+ <div class="projects">
+            <a class="project" href="./index.html">
+                <span class="project-title">Home</span>
+                <span class="project-description">Wanna Go Back To The Main Page?</span>
+            </a>
+        </div>
+
+        </div>
+       
+        <script>
+            const pfps = [
+                "./pics/stitch.jpg",
+                "./pics/killer.jpg",
+                "./pics/deathmetal.JPG",
+                "./pics/adorbs.JPG",
+                "./pics/frog.JPG"
+            ]
+            const pfp = document.querySelector(".pfp");
+            pfp.src = pfps[Math.floor(Math.random() * pfps.length)]
+        </script>
+
+    </body>
 </html>
