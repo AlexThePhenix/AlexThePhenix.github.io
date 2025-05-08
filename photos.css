@@ -1,0 +1,16 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    gap: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
